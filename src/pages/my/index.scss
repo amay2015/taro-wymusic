@@ -1,0 +1,52 @@
+$border-color: #888888;
+
+.my_container {
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    .header__left {
+      display: flex;
+      flex: 1;
+    }
+    .header__img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    .header__info {
+      padding: 20px;
+      .header__info__name {
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .header__info__level {
+        color: $border-color;
+        font-size: 24px;
+        border: 1px solid $border-color;
+        padding: 2px 20px;
+        border-radius: 40px;
+      }
+      .exit_icon {
+        float: right;
+      }
+    }
+  }
+  .user_count {
+    display: flex;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+    .user_count__sub {
+      flex: 1;
+      font-size: 22px;
+      color: $border-color;
+      .user_count__sub--num {
+        color: #323232;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
